@@ -21,3 +21,9 @@ div.rotate_left {
     -webkit-transform: rotate(-8deg); /* Safari */
     transform: rotate(-8deg);
 }
+div.container{
+  width:100%;
+}
+div.texty{
+  margin:0px auto;
+}
