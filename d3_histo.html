@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<head>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<!--script src="d3_v6/d3.js"></script-->
+<style>
+.topclass{
+   height:500px;
+   width:450px;
+   background-color:LightGrey;
+}
+svg{
+   shape-rendering: crispEdges;
+}
+.rule line{
+   stroke:#eee;
+}
+/*.arc text{
+   font: 10px sans-serif;
+   text-anchor: middle;
+}
+.arc path{
+   stroke: #fff;
+}*/
+.title{
+   fill: teal;
+   font-weight:bold;
+}
+</style>
+</head>
+<body>
+<div class="topclass">
+<h1>Data visualization with d3.js</h1>
+<h2>My daily activities</h2>
+<svg width="450" height="300"></svg>
+<script src="static/d3js/histo.js"></script>
+</div>
+<!-- Create a div where the graph will take place -->
+<div id="mydata">
+	<h2>Build a histogram from data</h2>
+</div>
+<div id="mybar">
+	<h2>Amount of sold weapons per country</h2>
+</div>
+
+<script src="static/d3js/barplot.js"></script>
+
+<script src="static/d3js/bars.js"></script>
+<div id="os_lst">
+	<p>Distros I had the chance to use at Univ & GradSchool</p>
+<script src="static/d3js/distro_bar.js"></script>
+</div>
+</body>
+</html>

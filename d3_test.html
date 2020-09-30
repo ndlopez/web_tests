@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<!--script src="d3_v6/d3.min.js"></script-->
+<style>
+.myclass{
+color: 'green'
+}
+*{
+font-family:'Verdana'
+}
+.error{
+color:red
+}
+.bar{
+ width:25px;
+ height: 100px;
+ margin: 2px;
+ display: inline-block;
+ background-color: blue;
+}
+div{
+height:120px;
+width:450px;
+background-color:LightGray;
+margin:5px;
+}
+</style>
+</head>
+<body>
+<h2 class="myclass">Testing d3.js</h2>
+<div id="fstdiv">
+	<span id="br1"><strong>In the above example, [d3.select] returns all the elms and style [red] makes its font-color red.</strong></span>
+<p class="myclass">Error: This is a paragraph</p>
+<p id="p2" class="myclass">Warning: Another paragraph</p>
+<p></p>
+</div></hr>
+<div>
+<p>list of numbers</p>
+<ul><li>Eins</li>
+<li>Zwei</li>
+<li>drei</li></ul>
+</div>
+<div style="border:1px solid;padding:0px;">
+<p>Another [div] object</p>
+<p><input type="checkbox"/> D3</label></p>
+</div>
+<div id="datas">
+<p>For some reason d3.js only works from the body elem,<br>
+I couldnt make it work from a id'd elm inside body.
+In such case append inside d3 a new <em> < div ></em> elem.</p>
+</div>
+<!--script>
+   d3.select("h2").style("font-family","sans-serif");
+   d3.select("br1").style("font-family","sans-serif");
+   d3.selectAll(".myclass").style('color','blue');
+   d3.select("p").text("This is an inserted paragraph.");
+   d3.selectAll("tr").selectAll("td").style('background-color','yellow');
+   //d3.select("body").append("p").text("Appended paragraph");
+   d3.select("div").insert("p").text("Inserted paragraph");
+   //use d3.select(element).remove();
+   //d3.select("h2").attr("class","error");
+   //d3.select("h2").classed('error',true);
+   d3.select("input").property("checked",true);
+   /*var bodyElm=d3.select("body");
+   var par1=bodyElm.append("p");
+   par1.text("Is it raining outside?");*/
+</script-->
+<!--script>
+   //reading a dataset and display as HTML elems 
+   var dataset=[108,217,320,43,55];
+   var mytitle=["Prices of "];
+   var currDate=new Date();
+ 
+   var dats = d3.select("body")
+              .append("div").style("height","240px")
+              .append("p").data(mytitle)
+              //.text(function(d){return d+ currDate.getMonth() + "/"+currDate.getDay();})
+              .text(function(d){return d+ currDate.toDateString();})
+   
+              .selectAll("h3")
+              .data(dataset)
+              .enter()
+              .append("h3")
+              .style('color',function(d){
+		      if(d % 2===0){return "green";}
+		      else{ return "red";}
+	      })
+	.text(function (d){return d + " JPY"; });
+              //.style("color","blue")
+              
+              /*var par2=d3.select("body").text(function(d,i){
+	      console.log("d: "+d);
+	      console.log("i: "+i);
+	      console.log("this: " + this);
+		if(error){throw error;}
+	      return d;
+	      });*/
+   var sndtitle=["Minkowski matrix"];
+   var matrix=[[-1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]];
+   var tr = d3.select("body").append("div")
+            .append("p").text(sndtitle)
+            .append("table").selectAll("tr")
+            .data(matrix).enter()
+            .append("tr");
+   var td = tr.selectAll("td")
+            .data(function (d){console.log(d);
+	    return d;})
+            .enter()
+            .append("td")
+            .text(function(d){console.log(d);
+	    return d;});
+</script-->
+<script>
+   //this code searches for keywords:"Error"&"Warning" on all
+   //<p> elements
+   d3.selectAll("p").style("color",function(d,i){
+	   var text = this.innerText;
+	   if(text.indexOf("Error") >= 0){return "red";}
+	   else if (text.indexOf("Warning")>=0){return "yellow";}
+   });
+</script>
+<script>
+   d3.selectAll("div")
+     .on("mouseover",function(){
+	     d3.select(this)
+	     .style("background-color","orange");
+	     //get current event info
+	     console.log(d3.event);
+	     //get x and y coord
+	     console.log(d3.mouse(this));
+     })
+     .on("mouseout",function(){
+	     d3.select(this)
+	     .style("background-color","LightGrey")
+     });
+</script>
+<!--script>
+//Overloading html, doesn't work due to CORS policy
+//must find another way to load JSON data
+d3.json("https://www.freecodecamp.org/json/cats.json",function(error,data){
+	if(error){return console.warn(error);}});
+</script-->
+<script src="static/d3js/svg_d3.js"></script>
+<script src="static/d3js/local_data.js"></script>
+<script src="static/d3js/axes.js"></script>
+</body>
+<footer><p>Designed with &#x266B and &#x26FE; in Kobe, JAPAN</p></footer>
+</html>
