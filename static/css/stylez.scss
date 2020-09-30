@@ -1,0 +1,37 @@
+%button {
+  min-width: 100px;
+  padding: 1em;
+  border-radius: 1em;
+}
+%twitter-background {
+  color: #fff;
+  background: #55acee;
+}
+%facebook-background {
+  color: #fff;
+  background: #3b5998;
+}
+.btn {
+  &--twitter {
+    @extend %button;
+    @extend %twitter-background;
+  }
+  &--facebook {
+    @extend %button;
+    @extend %facebook-background;
+  }
+}
+hr{
+  margin-bottom:20px;
+}
+pre{
+  background-color:#FFFFF0;
+}
+.sepi td:first-child{
+  color:#fff;
+  padding-left:10px;
+  padding-right:10px;
+  border:2px solid green;
+  border-radius:50%;
+  background-color:green;
+}
