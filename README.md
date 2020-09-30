@@ -1,10 +1,24 @@
 # Web tests
 
-Lots of Tests in HTML, CSS, and Javascript
+Lots of Tests in HTML, CSS, SVG, and Javascript (including d3.js)
 
-1. Polaroid effect: 
+## Learning Javascript and CSS
 
-   [My JSFiddle](https://jsfiddle.net/ndzerglink/cb8za2uc/)
+1. Polaroid effect<br> 
+   File <pol_effect.html> [My JSFiddle](https://jsfiddle.net/ndzerglink/cb8za2uc/)
 
-2. Counting cards:
-   [My JSFiddle](https://jsfiddle.net/ndzerglink/fcwd9cad/)
+2. Counting cards: [My JSFiddle](https://jsfiddle.net/ndzerglink/fcwd9cad/)
+
+3. Challenges to learn Javascript
+
+## Learning Data Visualization with D3.js
+
+1. Histograms<br>
+   File: <d3_histo.html><br>
+2. Bars<br>
+   File: <d3js_bars.html><br>
+3. Test plots and HTML manipulation<br>
+   File: <d3_test.html>
+
+*Environment*: MacOS 15.5, Debian Buster
+*Editors*: VIM and Emacs
