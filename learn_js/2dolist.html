@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link href="static/css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="static/libs/fontawesome-free/css/fontawesome.css" rel="stylesheet">
+    <link href="static/libs/fontawesome-free/css/brands.css" rel="stylesheet">
+    <link href="static/libs/fontawesome-free/css/solid.css" rel="stylesheet">
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script-->
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Sorting</a>
+      <!-- Navigation links (hidden by default) -->
+      <a href="#news">Shop List</a>
+      <a href="#contact">My Stars</a>
+      <a href="#about">About Cups</a>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myMenu()">
+      <i class="fa fa-bars"></i></a>
+    </div>
+    <button class="btn" onclick="topFunction()" id="go2Top"></button>
+    <div class="container">
+      <h1 class="row"id="tit">Sorting arrays</h1>
+      <blockquote>RAID storage is not backup. Make offsite backups.
+        Verify them once in a while; otherwise, you got an Schroedinger backup.
+      <a href="https://www.w3schools.com/js/js_array_methods.asp">w3schools</a>
+      <p id="swtch"></p>
+      <p id="p_this"></p>
+      </blockquote>
+      <div id="fruitdiv" class="row"></div>
+      <div class="row">
+        <ul><li id="para"></li>
+	<button class="btn" onclick="sortRand()">Random Sort</button>
+        <button class="btn" onclick="mySort()">Sort it!</button>
+	<br>
+	<li id="texty"></li>
+	<button class="btn" onclick="sortAlpha()">Sort Alpha</button>
+        <button class="btn" onclick="sortYear()">Sort by year</button>
+	<br>
+	<li id="sortme"></li>
+	<!--button class="btn btn-primary" onclick="someFunc()"-->
+	</ul>
+      </div>
+    </div>
+    <br>
+  <div class="container">
+    <h3>Other Stars</h3>
+    <div class="row" id="otherStars"></div>
+  </div>
+
+  <div class="container">
+    <h2>Regular Expressions</h2>
+    <table id="tab_regex">
+      <tr><th>Expression</th><th>Description</th></tr>
+      <tr><td>[abc]</td><td>Find any of the characters between backets</td></tr>
+      <tr><td>[0-9]</td><td>Find any of the digits between the brackets</td></tr>
+      <tr><td>(x|y)</td><td>Find any of the alternatives separated with "|"</td></tr>
+      <tr><td>\d</td><td>Find a digit</td></tr>
+      <tr><td>\s</td><td>Find a whitespace character</td></tr>
+      <tr><td>\b</td><td>Find a match at the beginning of a word: \bWORD or WORD\b</td></tr>
+      <tr><td>\uxxxx</td><td>Find the Unicode char specified by the hex number uxxxx</td></tr>
+      <tr><td>n+</td><td>Matches any string that contains at least one "n"</td></tr>
+      <tr><td>n*</td><td>Matches any string that contains zero or more occurrences of "n"</td></tr>
+      <tr><td>n?</td><td>Matches any string that contains zero or one occurrences of "n"</td></tr>
+    </table>
+  </div><hr>
+  <div class="container"><h3>Establish a routine</h3>
+  <p>When it comes to productivity, nothing beats a well-established routine:</p>
+  <ol>
+   <li>Get up early and exercise to get your body going</li>
+   <li>Plan for your day ahead</li>
+   <li>Have a few hours of "focus time"</li>
+   <li>Plan for the next day</li>
+   <li>Wrap up work and disconnect</li>
+   <li>Go to sleep early</li>
+   <li>Repeat</li>
+  </ol>
+  <p>it sounds kinda boring, but establishing a routine like that will free
+  up time for the fun things you want to do.</p>
+  </div><hr>
+  <script src="static/js/sorting.js"></script>
+  <script>
+    ///change the CSS of HTML elems
+    document.getElementById("tit").style.color="tomato";
+    //document.getElementById("swtch").innerHTML="Hello, world.";
+  </script>
+  <script src="static/js/common.js"></script>
+</body>
+<footer>
+  <div>
+    <p>Made with <i class="fa fa-heart"></i> using HTML, CSS, and JS.</p>
+  </div>
+  <span><i class="fa fa-globe-asia"></i> Hello from 35.18N, 136.9E.</span>
+  <!--a href="https://openweathermap.org/city/1856057">Weather: 37°С</a-->
+  <div class="social">
+    <a href="https://twitter.com/ndzerglink" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="mailto:ndzerglink@icloud.com"><i class="fab fa-apple"></i></a>
+    <a href="https://t.me/me" target="_blank"><span class="fa fa-paper-plane"></span></a>
+    <a href="https://gitlab.com/ndlopez" target="_blank"><span class="fab fa-gitlab"></span></a>
+    <a href='mailto:ndzerglink@live.jp' alt="Contact me/Report a problem."><span class="fa fa-envelope"></span></a>
+  </div>
+</footer>
+</html>

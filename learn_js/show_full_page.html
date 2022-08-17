@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="fontawesome-free-5.14.0/css/fontawesome.css" rel="stylesheet">
+<link href="fontawesome-free-5.14.0/css/brands.css" rel="stylesheet">
+<link href="fontawesome-free-5.14.0/css/solid.css" rel="stylesheet">
+
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: white;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;/*25%;*/
+  width: 100%;
+  /*text-align: center;*/
+  margin-top: 10px;/*30px;*/
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+h2{text-align: center;}
+.row{float: left;width:50%;font-size: 1.1rem;}
+/*ul{
+  list-style-type: none;
+  margin:0;padding:0;
+  display: inline-block;
+  *display: inline;
+  zoom:1;
+}*/
+dl {/*width: 100%;overflow: hidden;background: #ff0;*/
+  padding: 10px 5px 10px;
+}
+dt {/*adjust width;the total of both (dt,dd)mustbe 100%*/
+  width: 25%;text-align: center;
+  background:tomato;
+  margin-right: 10px;
+}
+dd {/*adjust width;the total of both (dt,dd)shouldbe 100%*/
+  width: 50%;text-align: left;
+  border:1px dashed lightgray;
+}
+dt,dd{
+  float:left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.fas, .fab{font-size: 2rem;}
+/*div > strong{text-transform: uppercase;display: block;margin-bottom: 25px;}*/
+/*.stats{padding-top: 60px;}*/
+.stats-list{
+  /*width:calc(100% + 40px);*/
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  list-style: none;
+  position: absolute;
+  /*overflow: hidden;*/
+}
+.stats-list li .icon{
+  width: 35px;
+  text-align: center;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.stats-list li .icon, .stats-list li > span{
+  display: inline-block;
+  vertical-align: middle;
+}
+.stats-list li{
+  width: 45%;
+  text-align: left;
+  margin-bottom: 30px;
+  display: inline-block;
+  /*text-transform: uppercase;
+  letter-spacing: 1px;*/
+}
+.stats-list li strong{margin-bottom: 10px;display: block;}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+  /*.stats-list li{text-transform: lowercase;}*/
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav')">&times;</a>
+  <!--div class="overlay-content">
+  </div-->
+  <div class="overlay-content">
+    <h2>Stats</h2>
+    <ul class="stats-list">
+      <li>
+        <div class="icon"><i class="fas fa-birthday-cake"></i></div>
+        <span><strong>Birthday</strong><em>March 29th</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-passport"></i></div>
+        <span><strong>Place</strong><em>Chicago, IL,<br>USA</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-concierge-bell"></i></div>
+        <span><strong>Cup Size</strong><em>34DD</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-ruler-vertical"></i></div>
+        <span><strong>Height</strong><em>1.67m</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-balance-scale"></i></div>
+        <span><strong>Weight</strong><em>78kg</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-eye"></i></div>
+        <span><strong>eyes-color</strong><em>grey</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-brush"></i></div>
+        <span><strong>hair-color</strong><em>blonde</em></span></li>
+      <li>
+        <div class="icon"><i class="fab fa-twitter"></i></div>
+        <span><strong>twitter</strong><em>@blt</em></span></li>
+      <li>
+        <div class="icon"><i class="fab fa-napster"></i></div>
+        <span><strong>pubic hair</strong><em>trimmed, <br>shaved</em></span></li>
+    </ul>
+  </div>
+</div>
+<div id="myNav2" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav2')">&times;</a>
+  <!--div class="overlay-content">
+  </div-->
+  <div class="overlay-content">
+    <h2>Stats</h2>
+    <ul class="stats-list">
+      <li>
+        <div class="icon"><i class="fas fa-birthday-cake"></i></div>
+        <span><strong>Birthday</strong><em>July 2th</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-passport"></i></div>
+        <span><strong>Place</strong><em>Minneapolis, MN,<br>USA</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-concierge-bell"></i></div>
+        <span><strong>Cup Size</strong><em>32G</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-ruler-vertical"></i></div>
+        <span><strong>Height</strong><em>1.74m</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-balance-scale"></i></div>
+        <span><strong>Weight</strong><em>65kg</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-eye"></i></div>
+        <span><strong>eyes-color</strong><em>brown</em></span></li>
+      <li>
+        <div class="icon"><i class="fas fa-brush"></i></div>
+        <span><strong>hair-color</strong><em>black</em></span></li>
+      <li>
+        <div class="icon"><i class="fab fa-twitter"></i></div>
+        <span><strong>twitter</strong><em>@blt</em></span></li>
+      <li>
+        <div class="icon"><i class="fab fa-napster"></i></div>
+        <span><strong>pubic hair</strong><em>shaved</em></span></li>
+    </ul>
+  </div>
+</div>
+<h2>Fullscreen Overlay Nav Example</h2>
+<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+<p>In this example, the navigation menu will slide in, from left to right:</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav('myNav')">&#9776; open</span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav('myNav2')">&#9776; open</span>
+<!--div>
+  <h2>Stats</h2>
+  <div class="row">
+    <dl><dt><span class="fas fa-birthday-cake"><br></span></dt>
+      <dd>Birthday<br><br>March 29th</dd></dl>
+    <dl><dt><span class="fas fa-ruler-vertical"><br></span></dt>
+      <dd>Height<br><br>1.65m</dd></dl></div>
+  <div class="row">
+    <dl><dt><span class="fab fa-twitter"><br></span></dt>
+      <dd>twitter<br><br>@ndls</dd></dl>
+    <dl><dt><span class="fas fa-envelope"><br></span></dt>
+      <dd>Height<br><br>1.65m</dd></dl>      
+  </div>
+</div>
+<div><ul><li><span class="fas fa-birthday-cake"></li>
+    <li>Birthday<br><br>March 29th</li></ul>
+<ul><li><span class="fas fa-birthday-cake"></li>
+    <li>Birthday<br><br>March 29th</li></ul>
+<ul><li><span class="fas fa-birthday-cake"></li>
+    <li>Birthday<br><br>March 29th</li></ul>
+<ul><li><span class="fas fa-birthday-cake"></li>
+    <li>Birthday<br><br>March 29th</li></ul></div-->
+<script>
+function openNav(myOBj) {
+  document.getElementById(myOBj).style.width = "100%";
+}
+
+function closeNav(myOBj) {
+  document.getElementById(myOBj).style.width = "0%";
+}
+
+</script>
+
+</body>
+</html>

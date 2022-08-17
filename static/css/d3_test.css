@@ -1,0 +1,16 @@
+.myclass{color: green;}
+*{font-family:Verdana;}
+.error{color:red;}
+.bar{
+ width:25px;
+ height: 100px;
+ margin: 2px;
+ display: inline-block;
+ background-color: blue;
+}
+div{
+ height:120px;
+ width:450px;
+ background-color:LightGray;
+ margin:5px;
+}

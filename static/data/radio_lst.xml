@@ -1,0 +1,38 @@
+<?xml version="1.00" encoding="UTF08"?>
+<radio>
+ <station>
+   <name>AceRadio-90s</name>
+   <genre>Pop</genre>
+   <codec>mp4a</codec>
+   <bits>32</bits>
+   <url>http://113fm-edge2.cdnstream.com:80/5108_48</url>
+ </station>
+ <station>
+   <name>AceRadio-90s</name>
+   <genre>AltRock</genre>
+   <codec>mp4a</codec>
+   <bits>32</bits>
+   <url>http://113fm-edge2.cdnstream.com:80/5107_48</url>
+ </station>
+ <station>
+   <name>The Alternative Channel</name>
+   <genre>Alternative</genre>
+   <codec>mp4a</codec>
+   <bits>32</bits>
+   <url>http://113fm-edge2.cdnstream.com:80/5116_48</url>
+ </station>
+ <station>
+   <name>Heart 80s UK</name>
+   <genre>Pop</genre>
+   <code></code>
+   <bits></bits>
+   <url>https://media-ssl.musicradio.com/Heart80s</url>
+ </station>
+ <station>
+   <name>Heart 90s UK</name>
+   <genre>Pop</genre>
+   <code></code>
+   <bits></bits>
+   <url>https://media-ssl.musicradio.com/Heart90s</url>
+ </station>
+</radio>

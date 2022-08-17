@@ -1,4 +1,4 @@
-# Web tests
+# My first steps learning JavaScript and Data Viz
 
 Lots of Tests in HTML, CSS, SVG, and Javascript (including d3.js)
 
@@ -9,7 +9,9 @@ Lots of Tests in HTML, CSS, SVG, and Javascript (including d3.js)
 
 2. Counting cards: [My JSFiddle](https://jsfiddle.net/ndzerglink/fcwd9cad/)
 
-3. Challenges to learn Javascript
+3. Challenges to learn Javascript:
+
+From freecodecamp.com
 
 ## Learning Data Visualization with D3.js
 
@@ -20,5 +22,6 @@ Lots of Tests in HTML, CSS, SVG, and Javascript (including d3.js)
 3. Test plots and HTML manipulation<br>
    File: <d3_test.html>
 
-*Environment*: MacOS 15.5, Debian Buster
-*Editors*: VIM and Emacs
+## Running Environment
+- MacOS 15.5, Debian Buster
+- Editors: VIM and Emacs

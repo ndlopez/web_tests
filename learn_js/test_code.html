@@ -1,0 +1,61 @@
+//test code
+//dats.sort(getAnySort("height"));
+<script>
+var txtFile = new XMLHttpRequest();
+var allText=[];
+txtFile.open("GET", "file://Users/diego/Documents/www/data/other_stars.txt", true);
+txtFile.onreadystatechange = function() {
+	if (txtFile.readyState === 4) {//Makes sure the document is ready to parse.
+		if (txtFile.status === 200) {//Makes sure it's found the file.
+			allText = txtFile.responseText;
+			document.write(allText);
+      //lines = txtFile.responseText.split("\r\n"); // Will separate each line into an array
+    } //"\r\n"
+  }
+}
+txtFile.send(null);
+console.log(allText);
+function showStars(){
+  var text="<p>";
+  for(var item in dats){
+    text+=dats[item].firstN + ", Weight: " + dats[item].weight + "kg, Height: "+
+    dats[item].height + "m<br>";
+  }
+  text+="</p>";
+  return text;
+}
+document.getElementById("otherStars").innerHTML = showStars();//li_tex;
+//console.log(dats);
+///
+li_tex+="<dt>"+ zz + "<img src='"+ pStars[xx].photo + "' width='100px'>";
+li_tex+=pStars[xx].firstN +"</dt>";
+li_tex+="<dd>"+ pStars[xx].born +"</dd><dd> Weight: "+
+			 pStars[xx].weight + "kg, Height: " +
+			 pStars[xx].height;
+li_tex+="m, Cup size: "+pStars[xx].body[0].bra + "</dd>";
+li_tex+="<dd>"+ pStars[xx].country + "</dd>";
+</script>
+<script src="data/other_stars.js"></script>
+<html>
+<div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+</div>
+<div class="card bg-dark text-white">
+  <img src="..." class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text">Last updated 3 mins ago</p>
+  </div>
+</div>
+
+<figure class="figure">
+  <img src="..." class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+</figure>
+</html>
